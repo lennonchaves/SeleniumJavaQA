@@ -1,5 +1,1 @@
-# projetogitiniciante
-
-
-QAZANDO
-# SeleniumJavaQA
+Projeto Selenium e Cucumber com Java
