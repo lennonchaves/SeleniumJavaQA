@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import runner.RunCucumber;
 
+import static support.Commands.checkMessage;
 import static support.Commands.clickElement;
 
 public class CadastroUsuarioPage extends RunCucumber {
@@ -31,7 +32,6 @@ public class CadastroUsuarioPage extends RunCucumber {
     }
 
     public void verificaCadastroSucesso(){
-        String textoLoginSucesso = getDriver().findElement(By.id("swal2-title")).getText();
-        Assert.assertEquals("Os textos não são iguais!", "Cadastro realizado!", textoLoginSucesso);
+        checkMessage(By.id("swal2-title"), "Cadastro realizado!");
     }
 }
